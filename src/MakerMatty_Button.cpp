@@ -12,6 +12,7 @@ Button::Button(int pinNum, int debaunceInterval)
     debouncer.attach(pin, INPUT_PULLUP);
 #endif
     debouncer.interval(interval);
+    debouncer.update();
 }
 
 void Button::update()
